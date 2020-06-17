@@ -1,0 +1,38 @@
+<div class="bg-gray-200 py-8">
+    <section class="lg:mx-48 md:mx-24 sm:mx-16 text-gray-700 body-font overflow-hidden border bg-white">
+        <div class="container py-8 mx-auto">
+            <div class="-my-8">
+                <div class=" pt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Test Directions
+                    </button>
+                    <hr>
+                </div>
+                <div class="pt-2 px-5 pt-8 mb-24 flex flex-wrap md:flex-no-wrap">
+                    <div class="md:flex-grow">
+                        <b class="">Please read the instructions carefully.</b>
+
+                        <p class="text-red-400 py-6">Your Exam ID for the test is <b>123456789</b>. Copy this id for
+                            future use.</p>
+
+                        <ul class="list-disc px-4">
+                            <li>Please follow the directions for each questions and provide and appropriate response.
+                            </li>
+                            <li>Do not open any browser/tab other than this testing window. Don not minimize the testing
+                                window. If you attempt either of this actions, the test will automatically log you out.
+                            </li>
+                            <li>Use of any electronic device(mobile,calculator,etc) during the test is strictly
+                                prohibited.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center pt-3">
+        <button (click)="checkTestDirections()"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded">
+            <i class="fa fa-play-circle" aria-hidden="true"></i> Next
+        </button>
+    </div>
+</div>

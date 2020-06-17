@@ -1,0 +1,46 @@
+<div class="bg-gray-200">
+    <div class="py-4 text-gray-500 text-2xl lg:mx-48 md:mx-24 sm:mx-8">
+        <div class="flex items-center bg-gray-200">
+            <div class="flex"><b>Essay Writing | <span class="text-lg">Question 1 out of 1</span></b></div>
+            <div class="flex-1 text-right">
+                <b>
+                    <i class="fa fa-clock-o mx-2" aria-hidden="true"></i>
+                    {{counter | formatTime}}
+                </b>
+            </div>
+        </div>
+    </div>
+    <section class="text-gray-700 body-font overflow-hidden border bg-white lg:mx-48 md:mx-24 sm:mx-8">
+        <div class="flex items-center px-2 py-4">
+            <div class="flex px-2"><img src="/assets/images/i-icon.png" height="30px" width="30px"></div>
+            <div class="flex text-blue-600">
+                Please discuss on the topic given below. Please compose your response in paragraph form. The length of
+                essay should be between 100 and 300.
+            </div>
+        </div>
+        <div class="container py-8 mx-auto">
+            <div class="-my-8">
+                <div class="pt-3">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        Question
+                    </button>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <b class="py-4 mx-8">Technology is boon or bane.</b>
+        <div class="mx-8 py-4 mb-8">
+            <textarea class="resize-none border rounded focus:outline-none focus:shadow-outline w-full h-48" [(ngModel)]="essay"></textarea>
+            <p>Words Left : {{300-this.essay.split(" ").length}} out of 300</p>
+        </div>
+        
+    </section>
+    <div class="text-center py-4">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mx-2 rounded">
+            <i class="fa fa-check-circle" aria-hidden="true"></i> Confirm Answer
+        </button>
+        <button (click)="essayComplete()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded">
+            <i class="fa fa-play-circle" aria-hidden="true"></i> Submit Answer
+        </button>
+    </div>
+</div>

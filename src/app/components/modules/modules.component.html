@@ -1,0 +1,55 @@
+<div class="bg-gray-200 py-8">
+    <section class="text-gray-700 body-font overflow-hidden border lg:mx-48 md:mx-24 sm:mx-16 bg-white">
+        <div class="container py-8 mx-auto">
+            <div class="-my-8">
+                <div class="pt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Modules
+                    </button>
+                </div>
+                <hr>
+                <table class="table-fixed my-8 mx-8 border-2">
+                    <thead class="border">
+                      <tr>
+                        <th class="w-1/2 px-4 py-2 border">Module Names</th>
+                        <th class="w-1/4 px-4 py-2 border">No of Questions</th>
+                        <th class="w-1/4 px-4 py-2 border">Time (in Minutes)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border px-4 py-2">English Comprehension</td>
+                        <td class="border px-4 py-2">10</td>
+                        <td class="border px-4 py-2">10</td>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Logical Ability</td>
+                        <td class="border px-4 py-2">9</td>
+                        <td class="border px-4 py-2">10</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-4 py-2">Quantitative Ability</td>
+                        <td class="border px-4 py-2">10</td>
+                        <td class="border px-4 py-2">10</td>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Essay Writing</td>
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">30</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-4 py-2">Automata</td>
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">60</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </section>
+    <div class="text-center pt-4">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mx-2 rounded" (click)="checkModules()">
+            <i class="fa fa-check-circle" aria-hidden="true"></i> Start Test
+        </button>
+    </div>
+</div>

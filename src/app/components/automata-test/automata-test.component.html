@@ -1,0 +1,85 @@
+<div class="bg-gray-200">
+    <div class="py-4 text-gray-500 lg:mx-8 md:mx-4 sm:mx-2">
+        <div class="flex items-center text-2xl bg-gray-200">
+            <div class="flex"><b>Automata | <span class="text-lg">Question 1 out of 2</span></b></div>
+            <div class="flex-1 text-right">
+                <b>
+                    <i class="fa fa-clock-o mx-2" aria-hidden="true"></i>
+                    {{counter | formatTime}}
+                </b>
+            </div>
+        </div>
+        <div class="flex bg-white text-black my-4 ">
+            <div class="w-2/5 border">
+                <div class="flex-inline my-2">
+                    <button class="bg-red-500 text-white hover:bg-red-600 font-bold py-2 px-4 mx-2 rounded">
+                        Problems
+                    </button>
+                    
+                    <button class="hover:bg-red-600 hover:text-white font-bold py-2 px-4 mx-2 rounded">
+                        Test Cases
+                    </button>
+
+                    <button class="hover:bg-red-600 hover:text-white font-bold py-2 px-4 mx-2 rounded">
+                        Output
+                    </button>
+                </div>
+                <hr>
+                <div class="flex px-2 items-center py-4">
+                    <div class="flex top-0 px-2"><img src="/assets/images/i-icon.png" height="50px" width="50px"></div>
+                    <div class="flex text-blue-600 text-sm">
+                        The current selected Programming Language is C. We emphasize the submisiion of fully working
+                        code over practically correct but efficient code. Once submitted, you cannot review the problem
+                        again. The version of GCC being used is 5.2.0.
+                    </div>
+                </div>
+                <div class="flex px-4" style="height:400px;overflow:scroll">
+
+                </div>
+            </div>
+            <div class="w-3/5 border">
+                <div class="flex-inline my-2 mx-2">
+                    <div class="inline-block relative w-24 ">
+                        <select
+                            class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option>C</option>
+                            <option>C++</option>
+                            <option>Java</option>
+                        </select>
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="bg-green-500 hover:bg-green-600 text-white text-sm font-bold py-2 px-4 mx-2 rounded">
+                        Save
+                    </button>
+                    <button class="bg-green-500 hover:bg-green-600 text-white text-sm font-bold py-2 px-4 mx-2 rounded">
+                        Compile & Run
+                    </button>
+                    <button (click)="submitAutomata()"
+                        class="bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-bold py-2 px-4 mx-2 rounded">
+                        Submit This Test
+                    </button>
+                    <div class="inline-block relative w-36 mx-2">
+                        <select
+                            class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option>Navigate to Question</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="bg-gray-200">
+    <div class="lg:mx-48 md:mx-24 sm:mx-16 py-4 text-gray-500 text-2xl">
+        <div class="flex items-center bg-gray-200">
+            <div class="flex-1"><b>English Comprehension</b></div>
+            <div class="flex-1 text-right">
+                <i class="fa fa-clock-o mx-2" aria-hidden="true"></i>
+                <!-- <b><countdown [config]="{ leftTime: 60, format: 'm:s' }"></countdown></b> -->
+            </div>
+        </div>
+    </div>
+    <section class="text-gray-700 body-font overflow-hidden border lg:mx-48 md:mx-24 sm:mx-16 bg-white">
+
+        <div class="container py-8 mx-auto">
+            <div class="-my-8">
+                <div class="pt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Module Description
+                    </button>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <table class="table-fixed my-8 mx-8 border-2">
+            <thead class="border">
+                <tr class="bg-gray-200">
+                    <th class="w-1/2 px-4 py-2 border">Module Names</th>
+                    <th class="w-1/4 px-4 py-2 border">No of Questions</th>
+                    <th class="w-1/4 px-4 py-2 border">Time (in Minutes)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">English Comprehension</td>
+                    <td class="border px-4 py-2">10</td>
+                    <td class="border px-4 py-2">10 Minutes</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="py-4 mx-8 mb-16">This test will assess your English Vocabulary, Grammar and Comprehension skills.</p>
+    </section>
+    <div class="text-center py-6">
+        <button (click)="checkModuleDescription()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded">
+            <i class="fa fa-play-circle" aria-hidden="true"></i> Next
+        </button>
+    </div>
+</div>

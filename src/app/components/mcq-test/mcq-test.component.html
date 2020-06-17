@@ -1,0 +1,53 @@
+<div class="bg-gray-200">
+    <div class="lg:mx-48 md:mx-24 sm:mx-16 py-4 text-gray-500 text-2xl">
+        <div class="flex items-center bg-gray-200">
+            <div class="flex"><b>English Comprehension | <span class="text-lg">Question 1 out of 10</span></b></div>
+            <div class="flex-1 text-right">
+                <b>
+                    <i class="fa fa-clock-o mx-2" aria-hidden="true"></i>
+                    {{counter | formatTime}}
+                </b>
+            </div>
+        </div>
+    </div>
+    <section class="text-gray-700 body-font overflow-hidden border lg:mx-48 md:mx-24 sm:mx-16 bg-white">
+        <div class="flex items-center px-2 py-4">
+            <div class="flex px-2"><img src="/assets/images/i-icon.png" height="30px" width="30px"></div>
+            <div class="flex text-blue-600">
+                Select the word OPPOSITE in the meaning of given word.
+            </div>
+        </div>
+        <div class="container py-8 mx-auto">
+            <div class="-my-8">
+                <div class="pt-3">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        Question
+                    </button>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <p class="py-4 mx-8">INDESCREET</p>
+        <div class="mx-8 py-2 mb-16">
+            <input type="radio" id="option1" name="option1" value="male">
+            <label for="option1" class="ml-3">Reliable</label><br>
+
+            <input type="radio" id="option2" name="option1" value="female">
+            <label for="option2" class="ml-3">Honest</label><br>
+
+            <input type="radio" id="option3" name="option1" value="male">
+            <label for="option3" class="ml-3">Pudent</label><br>
+
+            <input type="radio" id="option4" name="option1" value="male">
+            <label for="option4" class="ml-3">Stupid</label><br>
+        </div>
+    </section>
+    <div class="text-center py-4">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mx-2 rounded">
+            <i class="fa fa-check-circle" aria-hidden="true"></i> Confirm Answer
+        </button>
+        <button (click)="mcqComplete()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded">
+            <i class="fa fa-play-circle" aria-hidden="true"></i> Submit Answer
+        </button>
+    </div>
+</div>

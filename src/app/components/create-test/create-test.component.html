@@ -1,0 +1,155 @@
+<div class="bg-gray-200 ">
+    <div class="py-4 text-gray-500 text-2xl lg:mx-48 md:mx-24 sm:mx-16">
+        <b>Create New Test</b>
+    </div>
+    <form class="w-auto mx-auto" [formGroup]="testForm" (ngSubmit)="submitTestForm()">
+        <section class="text-gray-700 body-font overflow-hidden border bg-white lg:mx-48 md:mx-24 sm:mx-16">
+            <div class="text-red-500 pt-2 mx-4">
+                * indicates mandatory field
+            </div>
+
+            <div class="container py-8 mx-auto">
+                <div class="-my-8">
+                    <div class="pt-4">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Personal Information
+                        </button>
+                        <hr>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/2">
+                            <label class="block font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                                Full Name <span class="text-red-500">*</span>
+                            </label>
+                        </div>
+                        <div class="md:w-1/2">
+                            <input
+                                class="appearance-none border-2 border-gray-200 rounded w-auto py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                                formControlName="name" type="text" placeholder="Jane Doe">
+                            <!-- Validation Messages -->
+                            <div *ngIf="submitted && testForm.controls.name.errors" class="text-sm">
+                                <div class="text-red-500" *ngIf="testForm.controls.name.errors.required">
+                                    Full Name is required
+                                </div>
+                                <div class="text-red-500" *ngIf="testForm.controls.name.errors.pattern">
+                                    Name must start with Capital Letter
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/2">
+                            <label class="block font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-username">
+                                Email Id <span class="text-red-500">*</span>
+                            </label>
+                        </div>
+                        <div class="md:w-1/2">
+                            <input
+                                class="appearance-none border-2 border-gray-200 rounded w-auto py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                                formControlName="email" type="email" placeholder="abc@domain.com">
+
+                            <!-- Validation Messages -->
+                            <div *ngIf="submitted && testForm.controls.email.errors" class="text-sm">
+                                <div class="text-red-500" *ngIf="testForm.controls.email.errors.required">
+                                    Email Id is required
+                                </div>
+                                <div class="text-red-500" *ngIf="testForm.controls.email.errors.email">
+                                    Invalid Email Address
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/2">
+                            <label class="block font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-username">
+                                Mobile Number <span class="text-red-500">*</span>
+                            </label>
+                        </div>
+                        <div class="md:w-1/2">
+                            <input
+                                class="appearance-none border-2 border-gray-200 rounded w-auto py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                                formControlName="mobile" type="text" placeholder="9439XXXXXX">
+                            <!-- Validation Messages -->
+                            <div *ngIf="submitted && testForm.controls.mobile.errors" class="text-sm">
+                                <div class="text-red-500" *ngIf="testForm.controls.mobile.errors.required">
+                                    Mobile Number is required
+                                </div>
+                                <div class="text-red-500" *ngIf="testForm.controls.mobile.errors.pattern">
+                                    Invalid Mobile Number
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Security Question
+                        </button>
+                        <hr>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/2">
+                            <label class="block font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                                Select a Security Question <span class="text-red-500">*</span>
+                            </label>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="inline-block relative w-64">
+                                <select formControlName="securityQuestion"
+                                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    <option *ngFor="let question of securityQuestion" [ngValue]="question">
+                                        {{ question }}
+                                    </option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                                <!-- Validation Messages -->
+                            <div *ngIf="submitted && testForm.controls.securityQuestion.errors" class="text-sm">
+                                <div class="text-red-500" *ngIf="testForm.controls.securityQuestion.errors.required">
+                                    Please choose a Security Question
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/2">
+                            <label class="block font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-username">
+                                Answer <span class="text-red-500">*</span>
+                            </label>
+                        </div>
+                        <div class="md:w-1/2">
+                            <input
+                                class="appearance-none border-2 border-gray-200 rounded w-auto py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                                formControlName="answer" type="text" placeholder="Your Answer">
+                            <!-- Validation Messages -->
+                            <div *ngIf="submitted && testForm.controls.answer.errors" class="text-sm">
+                                <div class="text-red-500" *ngIf="testForm.controls.answer.errors.required">
+                                    Security Answer is required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="text-center py-4">
+            <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mx-2 rounded">
+                <i class="fa fa-check-circle" aria-hidden="true"></i> Continue
+            </button>
+            <button type="reset" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 m-2 rounded">
+                <i class="fa fa-times-circle-o" aria-hidden="true"></i> Cancel
+            </button>
+        </div>
+    </form>
+</div>

@@ -32,6 +32,7 @@ export class ModuleDescriptionComponent implements OnInit {
     this.testService.essay = false;
     this.testService.automata = false;
     this.testService.moduleCompleted = false;
+    this.testService.resultCharts=false;
   }
 
 }

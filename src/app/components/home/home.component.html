@@ -30,46 +30,48 @@
     <app-automata-test></app-automata-test>
 </span> -->
 
-<span *ngIf="testService.instructions">
+<span *ngIf="this.testService.instructions">
     <app-instructions></app-instructions>
 </span>
 
-<span *ngIf="testService.createTest">
+<span *ngIf="this.testService.createTest">
     <app-create-test></app-create-test>
 </span>
 
-<span *ngIf="testService.testDirection">
+<span *ngIf="this.testService.testDirection">
     <app-test-direction></app-test-direction>
 </span>
 
-<span *ngIf="testService.modules">
+<span *ngIf="this.testService.modules">
     <app-modules></app-modules>
 </span>
 
-<span *ngIf="testService.moduleDescription">
+<span *ngIf="this.testService.moduleDescription">
     <app-module-description></app-module-description>
 </span>
 
-<span *ngIf="testService.mcq">
+<span *ngIf="this.testService.mcq">
     <app-mcq-test></app-mcq-test>
 </span>
 
-<span *ngIf="testService.comprehension">
+<span *ngIf="this.testService.comprehension">
     <app-comprehension></app-comprehension>
 </span>
 
-<span *ngIf="testService.essay">
+<span *ngIf="this.testService.essay">
     <app-essay-test></app-essay-test>
-</span>
+</span> 
 
-<span *ngIf="testService.automata">
+<span *ngIf="this.testService.automata">
     <app-automata-test></app-automata-test>
 </span>
 
-<span *ngIf="testService.moduleCompleted">
+<span *ngIf="this.testService.moduleCompleted">
     <app-module-completed></app-module-completed>
 </span>
 
-
+<span *ngIf="this.testService.resultCharts">
+    <app-chart></app-chart>
+</span>
 
 

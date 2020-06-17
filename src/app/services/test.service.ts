@@ -15,6 +15,7 @@ export class TestService {
   essay:boolean;
   automata:boolean;
   moduleCompleted:boolean;
+  resultCharts:boolean;
 
   constructor() { }
 }

@@ -15,6 +15,7 @@ import { AutomataTestComponent } from './components/automata-test/automata-test.
 import { ModuleCompletedComponent } from './components/module-completed/module-completed.component';
 import { FormatTimePipe } from './pipes/format-time.pipe';
 import { ComprehensionComponent } from './components/comprehension/comprehension.component';
+import { ChartComponent } from './components/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ComprehensionComponent } from './components/comprehension/comprehension
     AutomataTestComponent,
     ModuleCompletedComponent,
     FormatTimePipe,
-    ComprehensionComponent
+    ComprehensionComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

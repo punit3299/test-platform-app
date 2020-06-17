@@ -33,6 +33,7 @@ export class EssayTestComponent implements OnInit {
     this.testService.essay = false;
     this.testService.automata = true;
     this.testService.moduleCompleted = false;
+    this.testService.resultCharts=false;
   }
 
 }

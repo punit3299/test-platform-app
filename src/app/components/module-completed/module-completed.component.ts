@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription, timer } from 'rxjs';
+import { TestService } from 'src/app/services/test.service';
 
 @Component({
   selector: 'app-module-completed',
@@ -8,7 +9,7 @@ import { Subscription, timer } from 'rxjs';
 })
 export class ModuleCompletedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private testService: TestService) { }
 
   countDown: Subscription;
   counter = 60;
@@ -18,6 +19,20 @@ export class ModuleCompletedComponent implements OnInit {
   }
   ngOnDestroy() {
     this.countDown = null;
+  }
+
+  showResults() {
+    this.testService.instructions = false;
+    this.testService.createTest = false;
+    this.testService.testDirection = false;
+    this.testService.modules = false;
+    this.testService.moduleDescription = false;
+    this.testService.mcq = false;
+    this.testService.comprehension = false;
+    this.testService.essay = false;
+    this.testService.automata = false;
+    this.testService.moduleCompleted = false;
+    this.testService.resultCharts = true;
   }
 
 }

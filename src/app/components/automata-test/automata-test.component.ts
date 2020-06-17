@@ -32,6 +32,7 @@ export class AutomataTestComponent implements OnInit {
     this.testService.essay = false;
     this.testService.automata = false;
     this.testService.moduleCompleted = true;
+    this.testService.resultCharts=false;
   }
 
 }

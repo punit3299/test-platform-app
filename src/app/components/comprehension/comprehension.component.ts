@@ -32,5 +32,6 @@ export class ComprehensionComponent implements OnInit {
     this.testService.essay = true;
     this.testService.automata = false;
     this.testService.moduleCompleted = false;
+    this.testService.resultCharts=false;
   }
 }

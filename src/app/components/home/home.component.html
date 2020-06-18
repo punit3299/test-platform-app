@@ -1,34 +1,24 @@
-<!-- <span *ngIf="!testService.termsAgreed">
-    <app-instructions></app-instructions>
-</span>
+<header class="text-gray-700 body-font sticky border">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
 
-<span *ngIf="!testService.testCreated && testService.termsAgreed">
-    <app-create-test></app-create-test>
-</span>
+        </nav>
+        <a
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Mock Placement Test</span>
+        </a>
+        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
 
-<span *ngIf="!testService.testDirectionsChecked && testService.testCreated && testService.termsAgreed">
-    <app-test-direction></app-test-direction>
-</span>
+        </div>
+    </div>
+</header>
 
-<span *ngIf="!testService.modulesChecked && testService.testDirectionsChecked && testService.testCreated && testService.termsAgreed">
-    <app-modules></app-modules>
-</span>
-
-<span *ngIf="!testService.moduleDescriptionChecked &&  testService.modulesChecked && testService.testDirectionsChecked && testService.testCreated && testService.termsAgreed">
-    <app-module-description></app-module-description>
-</span>
-
-<span *ngIf="!testService.mcqCompleted && testService.moduleDescriptionChecked &&  testService.modulesChecked && testService.testDirectionsChecked && testService.testCreated && testService.termsAgreed">
-    <app-mcq-test></app-mcq-test>
-</span>
-
-<span *ngIf="!testService.essayCompleted && testService.mcqCompleted && testService.moduleDescriptionChecked &&  testService.modulesChecked && testService.testDirectionsChecked && testService.testCreated && testService.termsAgreed">
-    <app-essay-test></app-essay-test>
-</span>
-
-<span *ngIf="!testService.automataCompleted && testService.essayCompleted && testService.mcqCompleted && testService.moduleDescriptionChecked &&  testService.modulesChecked && testService.testDirectionsChecked && testService.testCreated && testService.termsAgreed">
-    <app-automata-test></app-automata-test>
-</span> -->
+<!-- --------------- -->
 
 <span *ngIf="this.testService.instructions">
     <app-instructions></app-instructions>
@@ -60,7 +50,7 @@
 
 <span *ngIf="this.testService.essay">
     <app-essay-test></app-essay-test>
-</span> 
+</span>
 
 <span *ngIf="this.testService.automata">
     <app-automata-test></app-automata-test>
@@ -73,5 +63,3 @@
 <span *ngIf="this.testService.resultCharts">
     <app-chart></app-chart>
 </span>
-
-

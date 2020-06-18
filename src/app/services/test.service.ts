@@ -17,5 +17,11 @@ export class TestService {
   moduleCompleted:boolean;
   resultCharts:boolean;
 
+  englishForm:boolean=true;
+  logicalForm:boolean;
+  quantitiveForm:boolean;
+  essayForm:boolean;
+  automataForm:boolean;
+
   constructor() { }
 }

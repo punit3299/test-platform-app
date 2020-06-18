@@ -16,6 +16,8 @@ import { ModuleCompletedComponent } from './components/module-completed/module-c
 import { FormatTimePipe } from './pipes/format-time.pipe';
 import { ComprehensionComponent } from './components/comprehension/comprehension.component';
 import { ChartComponent } from './components/chart/chart.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { TestFormsComponent } from './components/test-forms/test-forms.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ChartComponent } from './components/chart/chart.component';
     ModuleCompletedComponent,
     FormatTimePipe,
     ComprehensionComponent,
-    ChartComponent
+    ChartComponent,
+    AdminComponent,
+    TestFormsComponent
   ],
   imports: [
     BrowserModule,

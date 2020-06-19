@@ -18,6 +18,7 @@ import { ComprehensionComponent } from './components/comprehension/comprehension
 import { ChartComponent } from './components/chart/chart.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { TestFormsComponent } from './components/test-forms/test-forms.component';
+import { IndexComponent } from './components/index/index.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TestFormsComponent } from './components/test-forms/test-forms.component
     ComprehensionComponent,
     ChartComponent,
     AdminComponent,
-    TestFormsComponent
+    TestFormsComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

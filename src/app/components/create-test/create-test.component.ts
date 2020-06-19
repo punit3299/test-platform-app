@@ -31,9 +31,9 @@ export class CreateTestComponent implements OnInit {
   }
 
   submitTestForm() {
-    // this.submitted = true;
-    // if (this.testForm.invalid)
-    //   return;
+    this.submitted = true;
+    if (this.testForm.invalid)
+      return;
 
       this.testService.instructions = false;
       this.testService.createTest = false;

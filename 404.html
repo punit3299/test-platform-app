@@ -26,39 +26,10 @@
   <app-root></app-root>
 
 
-  <script>
-    /*Toggle dropdown list*/
-    function toggleDD(myDropMenu) {
-      document.getElementById(myDropMenu).classList.toggle("invisible");
-    }
-    /*Filter dropdown options*/
-    function filterDD(myDropMenu, myDropMenuSearch) {
-      var input, filter, ul, li, a, i;
-      input = document.getElementById(myDropMenuSearch);
-      filter = input.value.toUpperCase();
-      div = document.getElementById(myDropMenu);
-      a = div.getElementsByTagName("a");
-      for (i = 0; i < a.length; i++) {
-        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-          a[i].style.display = "";
-        } else {
-          a[i].style.display = "none";
-        }
-      }
-    }
-    // Close the dropdown menu if the user clicks outside of it
-    window.onclick = function (event) {
-      if (!event.target.matches('.drop-button') && !event.target.matches('.drop-search')) {
-        var dropdowns = document.getElementsByClassName("dropdownlist");
-        for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (!openDropdown.classList.contains('invisible')) {
-            openDropdown.classList.add('invisible');
-          }
-        }
-      }
-    }
-  </script>
-<script src="runtime-es2015.c5fa8325f89fc516600b.js" type="module"></script><script src="runtime-es5.c5fa8325f89fc516600b.js" nomodule defer></script><script src="polyfills-es5.3e8196928d184a6e5319.js" nomodule defer></script><script src="polyfills-es2015.5b10b8fd823b6392f1fd.js" type="module"></script><script src="main-es2015.0920c94a98f7a37bcd16.js" type="module"></script><script src="main-es5.0920c94a98f7a37bcd16.js" nomodule defer></script></body>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+<script src="assets/js/courosel.js"></script>
+<script src="assets/js/dropdown.js"></script>
+<script src="runtime-es2015.c5fa8325f89fc516600b.js" type="module"></script><script src="runtime-es5.c5fa8325f89fc516600b.js" nomodule defer></script><script src="polyfills-es5.3e8196928d184a6e5319.js" nomodule defer></script><script src="polyfills-es2015.5b10b8fd823b6392f1fd.js" type="module"></script><script src="main-es2015.99b95941fb263504ca6f.js" type="module"></script><script src="main-es5.99b95941fb263504ca6f.js" nomodule defer></script></body>
 
 </html>

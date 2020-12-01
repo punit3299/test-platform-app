@@ -19,6 +19,12 @@ import { ChartComponent } from './components/chart/chart.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { TestFormsComponent } from './components/test-forms/test-forms.component';
 import { IndexComponent } from './components/index/index.component';
+import { CompanyComponent } from './components/company/company.component';
+import { MockInterviewComponent } from './components/mock-interview/mock-interview.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SyllabusComponent } from './components/syllabus/syllabus.component';
+import { NotesComponent } from './components/notes/notes.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +44,13 @@ import { IndexComponent } from './components/index/index.component';
     ChartComponent,
     AdminComponent,
     TestFormsComponent,
-    IndexComponent
+    IndexComponent,
+    CompanyComponent,
+    MockInterviewComponent,
+    HeaderComponent,
+    FooterComponent,
+    SyllabusComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
